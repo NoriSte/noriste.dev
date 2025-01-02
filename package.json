@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack -p 4000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "playwright:ui": "npx playwright test --ui"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.49.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
