@@ -5,6 +5,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className={styles.page}>
+      <h1>Home</h1>
       <main className={styles.main}>
         <Image
           className={styles.logo}

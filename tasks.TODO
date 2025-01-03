@@ -1,5 +1,4 @@
-- [ ] better local error tests
-- [ ] tsc watch mode
+- [ ] tsc pre commit?
 - [ ] Sitemap.xml
 - [ ] Test hrefs since typedRoutes is not supported under turbopack
 - [ ] og:image

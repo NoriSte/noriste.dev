@@ -18,7 +18,7 @@ export default defineConfig({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 0 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
@@ -37,6 +37,17 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+    },
+
+    {
+      name: 'e2e:all',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: /e2e\/.*.e2e.*.(test).(ts)/,
+    },
+    {
+      name: 'e2e:nojs',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: /e2e\/.*.e2e.nojs.*.(test).(ts)/,
     },
 
     // {
