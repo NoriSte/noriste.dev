@@ -1,0 +1,10 @@
+- [ ] better local error tests
+- [ ] tsc watch mode
+- [ ] Sitemap.xml
+- [ ] Test hrefs since typedRoutes is not supported under turbopack
+- [ ] og:image
+- [ ] axe a11y tests with playwright
+- [ ] article last update and creation date
+- [ ] Remove Next.js styles
+- [ ] explicit light/dark mode
+- [ ] Custom font (mostly for the future course page)
